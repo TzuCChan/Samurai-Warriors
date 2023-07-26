@@ -11,15 +11,15 @@ fetch(url)
 
 			img.id = i;
 			img.addEventListener('click', (e) => {
-				const dojoName = document.querySelector('#champ-name');
+				const dojoName = document.querySelector('#dojo-name');
 				dojoName.innerText = champions[e.target.id][0];
-				const dojoTitle = document.querySelector('#champ-title');
+				const dojoTitle = document.querySelector('#dojo-title');
 				dojoTitle.innerText = champions[i][1].title;
-				const dojoWeapon = document.querySelector('#champ-type');
+				const dojoWeapon = document.querySelector('#dojo-weapon');
 				dojoWeapon.innerText = champions[i][1].tags.join(`, `);
-				const dojoDesc = document.querySelector('#champ-desc');
+				const dojoDesc = document.querySelector('#dojo-desc');
 				dojoDesc.innerText = champions[i][1].blurb;
-				const dojoSplash = document.querySelector('#champ-splash');
+				const dojoSplash = document.querySelector('#dojo-splash');
 				dojoSplash.src = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champions[i][0]}_0.jpg`;
 				const modal = document.querySelector('.modal-container');
 				modal.style.visibility = 'visible';
