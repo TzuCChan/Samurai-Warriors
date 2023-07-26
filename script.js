@@ -11,16 +11,16 @@ fetch(url)
 
 			img.id = i;
 			img.addEventListener('click', (e) => {
-				const champName = document.querySelector('#champ-name');
-				champName.innerText = champions[e.target.id][0];
-				const champTitle = document.querySelector('#champ-title');
-				champTitle.innerText = champions[i][1].title;
-				const champType = document.querySelector('#champ-type');
-				champType.innerText = champions[i][1].tags.join(`, `);
-				const champDesc = document.querySelector('#champ-desc');
-				champDesc.innerText = champions[i][1].blurb;
-				const champSplash = document.querySelector('#champ-splash');
-				champSplash.src = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champions[i][0]}_0.jpg`;
+				const dojoName = document.querySelector('#champ-name');
+				dojoName.innerText = champions[e.target.id][0];
+				const dojoTitle = document.querySelector('#champ-title');
+				dojoTitle.innerText = champions[i][1].title;
+				const dojoWeapon = document.querySelector('#champ-type');
+				dojoWeapon.innerText = champions[i][1].tags.join(`, `);
+				const dojoDesc = document.querySelector('#champ-desc');
+				dojoDesc.innerText = champions[i][1].blurb;
+				const dojoSplash = document.querySelector('#champ-splash');
+				dojoSplash.src = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champions[i][0]}_0.jpg`;
 				const modal = document.querySelector('.modal-container');
 				modal.style.visibility = 'visible';
 			});
