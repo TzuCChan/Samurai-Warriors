@@ -11,3 +11,16 @@ body {
 h1 {
   text-align: center;
 }
+
+article.card {
+  width: 225px;
+  border-radius: 1em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  transition: all 300ms;
+  justify-content: space-around;
+  margin: 3px;
+}
