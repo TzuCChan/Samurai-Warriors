@@ -4,7 +4,7 @@
 
 body {
   font-family: 'League Spartan', sans-serif;
-  color: black;
+  color: gold;
   background-color: rgb(84, 120, 122);
 }
 
@@ -28,4 +28,9 @@ article.card {
 article.card:hover {
   filter: brightness(1.5);
   transform: scale(1.01);
+}
+
+.cardImg {
+  height: 100%;
+  width: 100%;
 }
