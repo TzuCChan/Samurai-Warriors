@@ -1,4 +1,5 @@
 const container = document.querySelector('.container');
+// const url = `https://ddragon.leagueoflegends.com/cdn/13.1.1/data/en_US/champion.json`;
 
 fetch(url)
 	.then((response) => response.json())
