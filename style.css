@@ -79,3 +79,10 @@ article.card:hover {
   display: flex;
   width: 725px;
 }
+
+#dojo-name,
+#dojo-title,
+#dojo-weapon {
+  text-align: center;
+  font-weight: bold;
+}
